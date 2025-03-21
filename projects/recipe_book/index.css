@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+header{
+    background-color: rgb(0, 0, 118);
+}
+h1{
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    font-size: 40px;
+}
+
+
+
+main{
+    max-width: 1300px;
+    margin: 10px auto;
+
+    display: flex;
+    flex-direction: column;
+}
+.recipe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    margin-top: 10px;
+
+    overflow: hidden; /* fazlalık resim border radius gelmesini etkilemez */
+}
+img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.recipe h2{
+    margin: 0;
+    padding: 10px;
+    min-width: 200px;
+}
+.recipe p{
+    color: gray;
+}
+.recipe p span{
+    font-weight: bolder;
+}
+.recipe a{
+    background-color: rgb(0, 0, 118);
+    color: white;
+    min-width: 150px;
+    padding: 10px;
+    text-decoration: none;
+
+    transition: background-color 0.2s;
+}
+.recipe a:hover{
+    background-color: rgb(0, 0, 80);
+}
+
+@media screen and (max-width : 768px) {
+    .recipe{
+        flex-direction: column  ;
+
+        margin: 10px auto;
+        max-width: 90%;
+    }   
+    .recipe img {
+        width: 100%;
+        height: auto;
+    }
+    .recipe p{
+        padding: 10px;
+    }
+    .recipe a{
+        width: 100%;
+        text-align: center;
+    }
+}
