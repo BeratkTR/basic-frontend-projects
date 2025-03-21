@@ -2,6 +2,8 @@ const secondHandEl = document.querySelector(".second-hand")
 const minHandEl = document.querySelector(".min-hand")
 const hourHandEl = document.querySelector(".hour-hand")
 
+const audio = new Audio("./audio/wall-clock-ticking.wav");
+
 const setDate = () => {
     const now = new Date();
 
@@ -16,6 +18,8 @@ const setDate = () => {
     const hour = now.getHours();
     const hourDegrees = ((hour/12)*360) + 90; 
     hourHandEl.style.transform = `rotate(${hourDegrees}deg)`;
+
+    audio.play();
 }
 
 setInterval(setDate, 1000);
