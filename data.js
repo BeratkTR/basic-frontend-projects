@@ -3,25 +3,25 @@ export const elements = [
     {
         name: "Landing Page",
         image: "./images/Screenshot 2025-02-25 at 11.50.17.png",
-        location: "/projects/landing",
+        location: "projects/landing",
         info: ["transform", "box-shadow"]
     },
     {
         name: "Responsive Design",
         image: "./images/Screenshot 2025-02-25 at 11.52.43.png",
-        location: "/projects/responsive",
+        location: "projects/responsive",
         info: ["flex-wrap -> %50 %50"]
     },
     {
         name: "Tip Calculator",
         image: "./images/Screenshot 2025-02-25 at 11.54.26.png",
-        location: "/projects/tip_calc",
+        location: "projects/tip_calc",
         info: ["Keydown event", "input checkValidity(), validationMessage"]
     },
     {
         name: "Age Calculator",
         image: "./images/Screenshot 2025-02-25 at 11.55.17.png",
-        location: "/projects/age_calc",
+        location: "projects/age_calc",
     },
     {
         name: "Recipe Book App",
