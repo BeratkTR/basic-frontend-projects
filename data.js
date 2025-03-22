@@ -50,6 +50,6 @@ export const elements = [
         name: "JS Clock",
         image: "images/Screenshot 2025-03-21 at 21.42.46.png",
         location: "projects/js_clock",
-        info: ["Interval", "Date", "fav.farm(quick favicon)\nunsplash(wallpaper)\npixabay(sound)\ncloudconvert"]
+        info: ["Interval", "Date", "fav.farm(quick favicon)\nunsplash(wallpaper)\npixabay(sound)\ncloudconvert", "css variables -> var(--rotate)", "tranform-origin"]
     },
 ]

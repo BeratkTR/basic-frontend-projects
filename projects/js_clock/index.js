@@ -8,15 +8,15 @@ const setDate = () => {
     const now = new Date();
 
     const seconds = now.getSeconds();
-    const secondDegrees = ((seconds/60)*360) + 90;   //başlangıç kuzey yönü ama 0deg batı yönüne bakıyor
+    const secondDegrees = ((seconds/60)*360) -90;   //başlangıç kuzey yönü ama 0deg batı yönüne bakıyor
     secondHandEl.style.transform = `rotate(${secondDegrees}deg)`;
 
     const min = now.getMinutes();
-    const minDegrees = ((min/60)*360) + 90; 
+    const minDegrees = ((min/60)*360) - 90; 
     minHandEl.style.transform = `rotate(${minDegrees}deg)`;
 
     const hour = now.getHours();
-    const hourDegrees = ((hour/12)*360) + 90; 
+    const hourDegrees = ((hour/12)*360) - 90; 
     hourHandEl.style.transform = `rotate(${hourDegrees}deg)`;
 
     audio.play();

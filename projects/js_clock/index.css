@@ -34,19 +34,52 @@ html {
     position: relative;
     width: 100%;
     height: 100%;
-    transform: translateY(-3px); /* account for the height of the clock hands */
+    transform: translateY(-3px); 
   }
 
+
   .hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
     width: 50%;
     height: 6px;
     background: black;
-    position: absolute;
-    top: 50%;
 
-    transform-origin: 100%;
-    transform: rotate(90deg); 
+    transform-origin: left;
+    transform: rotate(90deg);
     
-    transition: all 0.1s;
-    transition-timing-function: cubic-bezier(.03,2.02,.58,1);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.03, 2.02, 0.58, 1);
+  }
+
+  .hour-hand{
+    width: 33%;
+    height: 8px;
+  }
+  .min-hand{
+    width: 40%;
+    height: 6px;  
+  }
+  .second-hand{
+    background: rgb(84, 84, 84);
+    width: 44%;
+    height: 3px;
+  }
+
+  
+  .hour-markings {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .hour-mark {
+    position: absolute;
+    width: 4px; 
+    height: 20px; 
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(var(--rotate)) translateY(-140px);
   }
